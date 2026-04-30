@@ -1,4 +1,4 @@
-Here it is as plain text — select all and copy:
+
 
 ```
 # 🏥 Medical Diagnosis App
