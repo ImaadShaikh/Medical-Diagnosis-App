@@ -10,55 +10,8 @@ An AI-powered medical diagnosis assistant that takes a symptom description and r
 ## 🏗️ Architecture
 
 ```
-User / Client
-     │
-     │  Symptom Description
-     ▼
-┌─────────────────────────┐
-│     API / Interface     │
-│                         │
-│  ┌─────────────────┐    │
-│  │ FastAPI (app.py) │   │
-│  └─────────────────┘    │
-│                         │
-│  ┌──────────────────┐   │
-│  │ MCP Server       │   │
-│  │ (mcp_tool.py)    │   │
-│  └──────────────────┘   │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────────────────┐
-│          Processing Layer           │
-│                                     │
-│  ┌──────────────────┐               │
-│  │ Symptom Extractor│               │
-│  └──────────────────┘               │
-│  ┌──────────────────┐               │
-│  │ Diagnosis Module │               │
-│  └──────────────────┘               │
-│  ┌──────────────────┐               │
-│  │  PubMed Search   │               │
-│  └──────────────────┘               │
-│  ┌──────────────────┐               │
-│  │   Summarizer     │               │
-│  └──────────────────┘               │
-└──────────┬──────────────────────────┘
-           │
-     ┌─────┴──────┐
-     ▼            ▼
-┌──────────┐  ┌────────────┐
-│  Ollama  │  │ PubMed API │
-│ (LLaMA 3)│  │            │
-└──────────┘  └────────────┘
-                   │
-                   ▼
-        ┌─────────────────────┐
-        │    JSON Response    │
-        │  • Symptoms         │
-        │  • Diagnosis        │
-        │  • PubMed Summary   │
-        └─────────────────────┘
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/0a4b5c99-4afc-4100-a4ac-cbc4f7020dc3" />
+
 ```
 
 ---
